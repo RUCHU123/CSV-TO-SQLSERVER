@@ -2,7 +2,7 @@
 """
 Created on Fri Oct 18 15:14:04 2019
 
-@author: sankalp.patil
+@author: ruchika
 """
 
 import csv
@@ -27,7 +27,7 @@ block_blob_service.set_container_acl(container_name, public_access=PublicAccess.
 
 
 #Upload the CSV file to Azure storage account
-local_path="C:\\Users\\sankalp.patil\\assignment\\upload"
+local_path="C:\\Users\\ruchika\\assignment\\upload"
 for files in os.listdir(local_path):
     block_blob_service.create_blob_from_path(container_name,files,os.path.join(local_path,files))
     
